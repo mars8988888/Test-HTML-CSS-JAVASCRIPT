@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="debai.css">
+        <script src="debai.js"></script>
+        
+    </head>
+    <body>
+        <div>Logo</div>
+        <div id="navi">
+            <ul>
+                <li><a href="Debai.html">Homepage</a></li>
+                <li><a>Ulities</a></li>
+                <li><a>Share</a></li>
+                <li><a>Knowledge</a></li>
+                <li><a href="debaiRegister.html">Register</a></li>
+                <li><a>Login</a></li>
+                <li><a>About us</a></li>
+            </ul>
+        </div>
+        <form name="reg" action="http://vnexpress.net" onsubmit="return check();">
+            
+            <table>
+                <tr>
+                    <th>First name:</th>
+                    <td><input id="firstname" type="text" name="txtFirstName"><span>*</span></td>
+                </tr>
+                <tr>
+                    <th>Last name:</th>
+                    <td><input id="lastname" type="text" name="txtLastName" ><span>*</span></td>
+                </tr>
+                <tr>
+                    <th>Country:</th>
+                    <td>
+                       <select>
+                        <option>Vietnam</option>
+                        <option>Thailand</option>
+                        <option>Malaysia</option>
+                        <option>Japan</option> 
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td><input type="radio" checked="checked" value="male" name="gender">Male
+                        <input type="radio" value="female" name="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input id="email" type="text" name="txtEmail"><span>*</span></td>
+                
+                </tr>
+                <tr>
+                    <th>Telephone:</th>
+                    <td><input id="telephone" type="number" name="txtPhone"><span>*</span></td>
+                   
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

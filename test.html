@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Variable and datatype</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+
+    <script >
+        function kiemtra(){
+    var reEmail = /^\w+[@]\w+[.]\w+([.]\w+)?$/;     // /^[A-Za-z0-9]/;            // Alphanumeric
+    var sEmail = reg.txtEmail.value;                //object.property
+    if (!reEmail.test(sEmail)) {
+        alert("email khong hop le");
+                              //object.method
+        return false;
+    }
+}
+    </script>
+</head>
+<body>
+    <form name="reg" action="http://vnexpress.net" onsubmit="return kiemtra();">
+        
+        <br>Email:      <input type ="text" name="txtEmail">
+                <br>    <input type = "submit">
+    </form>
+</body>
+</html>
