@@ -3,7 +3,7 @@
 }
 #navi {
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: orange;
 }
 ul {
@@ -12,16 +12,18 @@ ul {
 li {
     display: inline-block;
     margin-right: 20px;
-    padding: 5px;
+    padding: 0px;
 }
 a {
+    padding-bottom: 5px;
     font-family: arial;
     font-size: 40px;
     text-align: center;
-    text-decoration: none;
+   color: white;
+   text-decoration: none;
 }
 a:hover {
-    background-color:grey;
+    background-color:rgb(209, 118, 13);
 }
 
 #div2 {
