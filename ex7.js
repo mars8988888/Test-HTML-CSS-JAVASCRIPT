@@ -71,20 +71,52 @@ document.write(thoigian);*/
 //     document.write(p1 + i + p2)
 // }
 
-function kiemtra(){
-    //1.doc kieu du lieu
-    var sData = reg.data.value;   
-    //var sData = document.getElementById(id).value;
-    //2.kiem tra loi
+// function kiemtra(){
+//     //1.doc kieu du lieu
+//     var sData = reg.data.value;   
+//     //var sData = document.getElementById(id).value;
+//     //2.kiem tra loi
    
-    if //(sData.lenghth == 0)
-        (sData=="") 
-        {
-        //3. Thoi coi
-        alert("data khong cho bo trong");
-        //4.phat
-        return false;
+//     if //(sData.lenghth == 0)
+//         (sData=="") 
+//         {
+//         //3. Thoi coi
+//         alert("data khong cho bo trong");
+//         //4.phat
+//         return false;
+//     }
+//     return true;
+// }
+function check(){
+    var reLoginname = /^[A-Za-z0-9]+$/;
+    var sLoginname = reg.txtLoginname.value;
+    if (!reLoginname.test(sLoginname)) {
+            alert("Login name is invalid");
+            reg.txtLoginname.focus();
+            return false;   
     }
+    
+    var rePassword = /^[0-9]+$/;
+    var sPassword = reg.txtPassword.value;
+    if (!rePassword.test(sPassword)) {
+            alert("Password is invalid");
+            reg.txtPassword.focus();
+            return false;   
+    }   
+
+    srePassword =reg.txtrePassword.value;
+        if(sPassword != srePassword){
+            alert("Confirm password doest not match");
+            reg.txtrePassword.focus();
+            return false;    
+        }
+    var reTelephone = /^\d{8,12}$/
+        var sTelephone = reg.txtPhone.value;
+        if (!reTelephone.test(sTelephone)) {
+            alert("Telephone is invalid");
+            
+            return false;
+        }
+    alert("Congratulation!! Your information has been sent successfully")
     return true;
 }
-

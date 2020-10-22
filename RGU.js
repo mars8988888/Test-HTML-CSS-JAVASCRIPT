@@ -6,7 +6,12 @@ function check(){
                 reg.txtUsername.focus();
                 return false;  
             }
-        
+        srePassword =reg.txtrePassword.value;
+            if(sPass != srePassword){
+                alert("Confirm password doest not match");
+                reg.txtrePassword.focus();
+                return false;
+        }
         var reFirstName = /^[A-Za-z0-9]+$/;
         var sFirstName = reg.txtFirstName.value;
         if (!reFirstName.test(sFirstName)) {
