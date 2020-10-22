@@ -4,7 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <title>Information</title>
         <link href="images/URG.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="RGU.css"
+        <link rel="stylesheet" href="RGU.css">
+        <script src="RGU.js"></script>
     </head>
     <BODY>
                 <A name=TOP></A><A name=TOP></A>
@@ -55,39 +56,40 @@
                                     <IMG height=1 src="images/1pxwhite.gif" width=150>
                                 <!-- centre (main) columns --><!-- opening cell tags -->
                                 <TD>
-                                    <table id="form">
+                                    <form action="http://vnexpress.net" name="reg" onsubmit="return check();">
+                                        <table id="form" >
                                         <tr>
                                             <th>Create a new account</th>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td>Username</td>
-                                            <td><input><span>*</span></td>
+                                            <td><input id="Username" type="text" name="txtUsername"><span>*</span></td>
                                             
                                         </tr>
                                         <tr>
                                             <td>Password</td>
-                                            <td><input><span>*</span></td>
+                                            <td><input id="Password" type="text" name="txtPassword"><span>*</span></td>
                                             
                                         </tr>
                                         <tr>
                                             <td>Password confirm</td>
-                                            <td><input><span>*</span></td>
+                                            <td><input id="Password" type="text" name="txtPassword"><span>*</span></td>
                                             
                                         </tr>
                                         <tr>
                                             <td>First Name</td>
-                                            <td><input><span>*</span></td>
+                                            <td><input id="firstname" type="text" name="txtFirstName"><span>*</span></td>
                                             
                                         </tr>
                                         <tr>
                                             <td>Last name</td>
-                                            <td><input><span>*</span></td>
+                                            <td><input id="lastname" type="text" name="txtLastName"><span>*</span></td>
                                             
                                         </tr>
                                         <tr>
                                             <td>Email address</td>
-                                            <td><input><span>*</span></td>
+                                            <td><input id="email" type="text" name="txtEmail"><span>*</span></td>
                                             
                                         </tr>
                                         <tr>
@@ -117,6 +119,8 @@
                                         </tr>
                                         
                                     </table>
+                                    </form>
+                                    
                                 </TD><!-- right column -->
                                 <TD width=140>
                                     <TABLE class=panel cellSpacing=0 cellPadding=2 width="100%" bgColor=#cccccc border=0>
