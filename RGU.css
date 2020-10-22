@@ -1,0 +1,12 @@
+#form {
+    
+    margin: 0px auto;
+}
+#form td,tr {
+    
+    margin-bottom: 70px;
+    text-align: left;
+}
+textarea {
+    overflow:scroll;
+}
