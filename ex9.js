@@ -1,4 +1,4 @@
-onload = function(){
+window.onload = function(){
     var second = 00;
     var milisecond = 00;
 
@@ -7,11 +7,11 @@ onload = function(){
     var buttonStart = document.getElementById("start");
     var buttonStop = document.getElementById("stop");
     var buttonReset = document.getElementById("reset");
-    var abd;
+    var abc;
 
     buttonStart.onclick = function(){
         clearInterval(abc);
-        abc = setInterval(settime,10);
+        abc = setInterval(settimer,10);
     }
 
     buttonStop.onclick = function(){
@@ -20,13 +20,13 @@ onload = function(){
 
     buttonReset.onclick = function(){
         clearInterval(abc);
-        Second = "00";
-        millisecond ="00";
+        second = "00";
+        milisecond = "00";
         buttonSecond.innerHTML = second;
-        buttonMillisecond.innerHTML =milisecond;
+        buttonMillisecond.innerHTML = milisecond;
     }
 
-    function settime(){
+    function settimer(){
         milisecond++;
 
         if(milisecond < 9) {
@@ -49,10 +49,6 @@ onload = function(){
             buttonSecond.innerHTML = second;
         }
     }
-
-
-
-
 
 
 }
