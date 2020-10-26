@@ -30,10 +30,10 @@ window.onload = function(){
         milisecond++;
 
         if(milisecond < 9) {
-            buttonMillisecond = "0" + milisecond;
+            buttonMillisecond.innerHTML = "0" + milisecond;
         }
         if(milisecond > 9){
-            buttonMillisecond = milisecond;
+            buttonMillisecond.innerHTML = milisecond;
         }
 
         if( milisecond > 99) {
