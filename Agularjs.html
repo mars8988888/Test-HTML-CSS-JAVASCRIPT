@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agular JS </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src=Data.js></script>
+</head>
+<body>
+    <!-- <div>
+        1 + 2 = {{1 + 2}}
+    </div>
+    <div ng-app>
+        1 + 2 = {{ 1 + 2}} 
+    </div> -->
+
+    <!-- <div style="text-align: center;"  ng-app="" ng-init="quantity=1; price=5">
+ 
+        <p>Quantity: <input type="number" ng-model="quantity"></p>
+        <p>price: <input type="number" ng-model="price"></p>
+        <p>Total in dollar: {{ quantity*price }} USD</p>
+        
+        </div> -->
+    
+    <!-- <div class="container"  ng-app="" ng-init="days=['monday','tuesday','wednesday']">
+ 
+            <p>All the days in week</p>
+            <ol start = "2">
+                <li ng-repeat="day in days">
+                    {{day}}
+                </li>
+            </ol>
+            
+            
+    </div> -->
+     <!-- <div class="container"  ng-app="" ng-init="count=0">
+ 
+            <p>All the days in week</p>
+            <span class="badge"> {{count}}</span>
+            <button class="btn">Dat hang</button>
+            
+            
+    </div> -->
+
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <img src="img.jpg">
+        <button ng-click="count = count + 1">Dat Hang</button>
+        
+        <p style="text-align: right;">Shopping cart:  {{ count }}</p>
+        
+        </div>
+        
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.count = 0;
+        });
+    </script> -->
+
+    <div ng-app="" ng-init="mycolor='green'">
+    <p style="color:{{mycolor}}" >Change text color</p>
+    <!-- <input type="color" ng-model="mycolor" ></input> -->
+    
+       Chon mau <select ng-model="mycolor">
+            <option style="color: black;">Black</option>
+            <option style="color: blue;">Blue</option>
+            <option style="color: red;">Red</option>
+            <option style="color: brown;">Brown</option>
+            <option style="color: green;">Green</option>
+        </select>
+</div>
+    <!-- <div ng-app="" ng-init="firstName='John';lastName='Doe'">
+            Your firstname :    <input type="text" ng-model="firstName"><br>
+            Your lastname  :    <input type="text" ng-model="lastName">
+            
+            <p>The full name is: <span ng-bind="firstName + ' ' + lastName"></span></p> <!-- '  ' chinh la khoang cach trong chuoi-->
+            
+    </div>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

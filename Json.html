@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test JSON</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="Data.js"></script>
+    </head>
+    <body>
+        <div class="container" ng-app="myApp" ng-controller="namesCtrl">
+            <table class="table table-hover">
+                <caption><h2>Best Phone List</h2></caption>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+                <tr ng-repeat="x in names">
+                    <td>{{x.code}}</td>
+                    <td>{{x.name}}</td>
+                    <td>{{x.price}}</td>
+                    <td align="center"><img src="{{x.img}}" width="65"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
