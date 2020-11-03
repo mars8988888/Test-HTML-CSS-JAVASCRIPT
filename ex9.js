@@ -51,5 +51,11 @@ window.onload = function(){
         }
     }
 
-
 }
+
+var i = 1;
+var sum =0;
+for(i=0;i<=10;i++){
+    sum=sum+i;
+}
+alert(sum);
