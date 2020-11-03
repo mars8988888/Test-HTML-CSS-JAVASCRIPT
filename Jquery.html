@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <script>
+         $(document).ready(function(){
+        //   $("button").click(function(){
+        //     $("p").hide(1000);
+        //   });
+
+        //   $("button").click(function(){
+        //     $("p").hide(5000);
+        //   });
+          
+
+        //   $("button").click(function(){
+        //     $("p").show(1000);
+        //   });
+
+        //   $("button").click(function(){
+        //     $("#div1").fadeToggle();
+        //     $("#div2").fadeToggle(5000);
+        //     $("#div3").fadeToggle(10000);
+        // });
+
+                $(document).ready(function(){
+        $("button").click(function(){
+            $("#p1").css("background-color", "red");
+        });
+        });
+        });
+        
+        </script>
+</head>
+<body>
+    <button>Hide</button>
+    <button>hide2</button>
+    <button>Show</button>
+    
+    <p>This is a paragraph with little content.</p>
+    <p>This is another small paragraph.</p>
+
+    <button>Click to fade in boxes</button><br><br>
+
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+    <p id="p1">jQuery is fun!!</p>
+
+    <button>Click me</button>
+</body>
+</html>

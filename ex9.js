@@ -11,6 +11,7 @@ window.onload = function(){
 
     buttonStart.onclick = function(){
         clearInterval(abc);
+        var abc;
         abc = setInterval(settimer,10);
     }
 
