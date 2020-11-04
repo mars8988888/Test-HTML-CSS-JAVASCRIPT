@@ -20,7 +20,7 @@ function check(){
             reg.txtEmail.focus();
             return false;
         }
-    var reTelephone = /^[0-9]+$/;
+    var reTelephone = /^\d{8,16}$/;
         var sTelephone = reg.txtPhone.value;
         if (!reTelephone.test(sTelephone)) {
             alert("Telephone is invalid");
