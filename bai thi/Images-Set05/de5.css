@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+}
+#form {
+    
+    margin: 0px auto;
+}
+#form td,tr {
+    
+    margin-bottom: 70px;
+    text-align: left;
+}
+textarea {
+    overflow:scroll;
+}
+input , select, textarea{
+    box-sizing: border-box;
+    border: 1px solid #99CC33;
+}
+input[type=submit]{
+    display:inline-block;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+input[type=reset]{
+    display:inline-block;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+input:hover {
+    box-shadow: 1px 0px 5px  lightgreen;
+}
+#signin {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding-left: 100px;
+    padding-top: 100px;
+    
+}

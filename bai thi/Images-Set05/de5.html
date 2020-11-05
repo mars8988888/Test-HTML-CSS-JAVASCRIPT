@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="de5.css">
+        <script src="de5.js"></script>
+</head>
+<body>
+    <div><img src="logo.JPG"></div>
+    <div><img src="ebay.JPG"></div>
+    <form action="dangky.html" name="reg" onsubmit="return check();">
+        <table>
+        <tr>
+            <td><img src="pic.JPG"></td>
+            <td id="register">
+                <div id="signin">
+                    <h1>Sign In</h1>
+                    <input type="email" id="email" type="email"  name="txtEmail" required><br>
+                    <input type="password" id="Password" type="password"  name="txtPassword"required><br>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </td>
+        </tr>
+        </table>
+
+        <script>
+                    function check(){
+                var reEmail = /^\w+[@]\w+[.]\w+([.]\w+)?$/;
+                var sEmail = reg.txtEmail.value;
+                if (!reEmail.test(sEmail)) {
+                    alert("Email is invalid");
+                    
+                    return false;
+                }
+
+                var rePassword = /^\w{6,12}$/;
+            var sPassword = reg.txtPassword.value;
+            if (!rePassword.test(sPassword)) {
+                alert("Password cant be blank and must 6 to 12 characters");
+                reg.txtPassword.focus();
+                return false;  
+            } else if (sPassword == sUsername){
+                alert("Password cant be the same with username");
+                reg.txtPassword.focus();
+                return false;
+            }
+
+        </script>
+    </form>
+    
+</body>
+</html>

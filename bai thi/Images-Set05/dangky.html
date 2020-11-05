@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="de5.css">
+        <script src="de5.js"></script>
+</head>
+<body>
+    <div><img src="logo.JPG"></div>
+                <form action="http://vnexpress.net" name="reg" onsubmit="return check();">
+                    <table id="form" >
+                    <tr>
+                        <th colspan="2">Register</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Account type</th>
+                        <td><input type="radio" checked="checked" value="male" name="gender">Personal Account
+                            <input type="radio" value="female" name="gender">Business Account
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email address</td>
+                        <td><input id="email" type="text"  name="txtEmail"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Confirm Email address</td>
+                        <td><input id="Cemail" type="email"  name="txtCEmail"></td>
+                        
+                    </tr>
+
+                    
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input id="Password" type="password"  name="txtPassword"></td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Mobile</td>
+                        <td><input input id="Mobile" type="number" name="txtMobile"></td>
+                    </tr>
+                   
+                    <tr>
+                        <td><input type="submit" value="Register"></td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+                </form>
+
+
+                <!-- <script>
+                    function check(){
+                        var reEmail = /^\w+[@]\w+[.]\w+([.]\w+)?$/;
+                        var sEmail = reg.txtEmail.value;
+                        if (!reEmail.test(sEmail)) {
+                            alert("Email is invalid");
+                            
+                            return false;
+                        }
+
+                        var sreEmail = /^\w+[@]\w+[.]\w+([.]\w+)?$/;
+                        var CEmail =reg.txtCEmail.value;
+                            if(!sreEmail.test(CEmail)){
+                                alert("You must enter confirm email");
+                                reg.txtCEmail.focus();
+                                return false;
+                        } else if (CEmail!= sEmail){
+                            alert("Your confirm email doesnt match ");
+                            reg.txtCEmail.focus();
+                            return false;
+                        }
+                        var rePassword = /^\w{6,12}$/;
+                            var sPassword = reg.txtPassword.value;
+                            if (!rePassword.test(sPassword)) {
+                                alert("Password cant be blank and must 6 to 12 characters");
+                                reg.txtPassword.focus();
+                                return false;  
+                            } else if (sPassword == sUsername){
+                                alert("Password cant be the same with username");
+                                reg.txtPassword.focus();
+                                return false;
+                            }
+                        
+                            
+
+                        
+                    alert("Congratulation!! Your account has been created successfully")
+                    return true;
+                }
+
+
+                </script> -->
+                
+</body>
+</html>
