@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="debai.css">
+            <style>
+                * {
+    margin: 0px;
+}
+#navi {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0px;
+}
+a {
+    padding-bottom: 5px;
+    font-family: arial;
+    font-size: 40px;
+    text-align: center;
+   color: white;
+   text-decoration: none;
+}
+a:hover {
+    background-color:rgb(209, 118, 13);
+}
+
+#div2 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(./img.jpg);
+    background-size:  100%;;
+    background-repeat: no-repeat;
+    
+}
+table {
+    margin: 0 auto;
+}
+table, tr,th,td {
+    padding: 20px 16px;
+
+}
+th {
+    text-align: right;
+}
+span {
+    color: red;
+    text-align: left;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+            </style>
+            <script>
+                function check(){
+    var reFirstName = /^[A-Za-z0-9]+$/;
+    var sFirstName = reg.txtFirstName.value;
+    if (!reFirstName.test(sFirstName)) {
+            alert("First name is invalid");
+            reg.txtFirstName.focus();
+            return false;   
+    }   
+    var reLastName = /^[A-Za-z]+$/;
+    var sLastName = reg.txtLastName.value;
+    if (!reLastName.test(sLastName)) {
+            alert("Last name is invalid");
+            reg.txtLastName.focus();
+            return false;
+    }
+    var reEmail = /^\w+[@]\w+[.]\w+([.]\w+)?$/;
+        var sEmail = reg.txtEmail.value;
+        if (!reEmail.test(sEmail)) {
+            alert("Email is invalid");
+            reg.txtEmail.focus();
+            return false;
+        }
+    var reTelephone = /^\d{8,16}$/;
+        var sTelephone = reg.txtPhone.value;
+        if (!reTelephone.test(sTelephone)) {
+            alert("Telephone is invalid");
+            reg.txtPhone.focus();
+            return false;
+        }
+        alert("Congratulation!! Your information has been sent successfully")
+        return true;
+}
+
+            </script>
+            
+
+        </head>
+        <body>
+            <div>Logo</div>
+            <div id="navi">
+                <ul>
+                    <li><a href="Debai.html">Homepage</a></li>
+                    <li><a>Ulities</a></li>
+                    <li><a>Share</a></li>
+                    <li><a>Knowledge</a></li>
+                    <li><a href="debaiRegister.html">Register</a></li>
+                    <li><a>Login</a></li>
+                    <li><a>About us</a></li>
+                </ul>
+            </div>
+            <form name="reg" action="http://vnexpress.net" onsubmit="return check();">
+                
+                <table>
+                    <tr>
+                        <th>First name:</th>
+                        <td><input id="firstname" type="text" name="txtFirstName"><span>*</span></td>
+                    </tr>
+                    <tr>
+                        <th>Last name:</th>
+                        <td><input id="lastname" type="text" name="txtLastName" ><span>*</span></td>
+                    </tr>
+                    <tr>
+                        <th>Country:</th>
+                        <td>
+                           <select>
+                            <option>Vietnam</option>
+                            <option>Thailand</option>
+                            <option>Malaysia</option>
+                            <option>Japan</option> 
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th>Gender:</th>
+                        <td><input type="radio" checked="checked" value="male" name="gender">Male
+                            <input type="radio" value="female" name="gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td><input id="email" type="text" name="txtEmail"><span>*</span></td>
+                    
+                    </tr>
+                    <tr>
+                        <th>Telephone:</th>
+                        <td><input id="telephone" type="number" name="txtPhone"><span>*</span></td>
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="mySelect" onchange="myFunction()">
+                                <option value="10000">truong phong</option>
+                                <option value="7000">truong </option>
+                                <option value="6000">phong</option>
+                                <option value="5000">tg</option>
+                                <option value="3000">trung</option>
+                            </select>  
+                        </td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p id="demo"><input></p></td>
+                            <script>
+                                function myFunction() {
+                                  var x = document.getElementById("mySelect").value;
+                                    document.getElementById("demo").innerHTML = x;
+                                  
+                                }
+                            </script>
+                                
+                         
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Register">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+    </html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
